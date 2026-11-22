@@ -14,25 +14,39 @@ export default function Arquitectura() {
             <li><strong>CI/CD:</strong> Automatización con GitHub Actions.</li>
           </ul>
           
-          <div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-3 mt-8">Estructura de Directorios</h3>
-            {/* Aquí está la magia: pre y code respetan los espacios */}
-            <pre className="bg-gray-900 text-green-400 p-6 rounded-lg overflow-x-auto text-sm font-mono shadow-inner">
-              <code>
-{`C:.
-├───.github
-│   └───workflows
-├───backend
-│   └───node_modules
-├───public
-└───src
-    ├───assets
-    └───pages`}
-              </code>
+          <div className="mt-8">
+            <h3 className="text-xl font-semibold text-gray-800 mb-3">Estructura de Directorios (Resumida)</h3>
+            
+            {/* Usamos una plantilla de texto con saltos de línea reales */}
+            <pre className="bg-gray-900 text-green-400 p-6 rounded-lg overflow-x-auto text-sm font-mono shadow-inner leading-relaxed">
+{`Arquitectura-CI-CD/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+├── backend/
+│   ├── node_modules/     (Dependencias)
+│   ├── package.json
+│   └── server.js         (API Express)
+├── public/
+│   ├── informe.pdf
+│   └── diapositivas.pptx
+├── src/
+│   ├── assets/
+│   ├── pages/
+│   │   ├── Inicio.tsx
+│   │   ├── Arquitectura.tsx
+│   │   ├── Documento.tsx
+│   │   └── Diapositivas.tsx
+│   ├── App.tsx           (Rutas)
+│   └── main.tsx
+├── .env.production
+├── package.json
+└── vite.config.ts`}
             </pre>
-            <p className="text-sm text-gray-500 mt-2">
-              * Se ha omitido la carpeta <code>node_modules</code> interna por brevedad.
-            </p>
+            
+            <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg text-blue-800 text-sm">
+              <p><strong>Nota:</strong> Se ha omitido la carpeta <code>node_modules</code> completa por razones de espacio. La estructura muestra los archivos clave del proyecto.</p>
+            </div>
           </div>
         </div>
       </div>
