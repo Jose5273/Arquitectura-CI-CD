@@ -1,32 +1,41 @@
-# React + TypeScript + Vite
+Proyecto Full-Stack: Arquitectura y CI/CD
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Este repositorio contiene una aplicación web profesional desarrollada para presentar un proyecto de arquitectura de software, integrando diseño, documentación y despliegue continuo (CI/CD) en múltiples plataformas.
 
-Currently, two official plugins are available:
+Descripción General
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+La aplicación es una Single Page Application (SPA) construida con **React**, **Vite** y **Tailwind CSS**, que consume una API REST desarrollada en **Node.js** y **Express**. El proyecto está diseñado para mostrar de forma interactiva:
+1.  **Inicio:** Estado de conexión con el backend en tiempo real.
+2.  **Arquitectura:** Diagrama y explicación de la estructura del proyecto.
+3.  **Documento:** Visualización incrustada de un informe en PDF.
+4.  **Diapositivas:** Vista previa de la presentación del proyecto.
+5.  **Figma:** Integración de un prototipo de diseño (opcional según la vista).
 
-## React Compiler
+Tecnologías Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*   **Frontend:** React 18, TypeScript, Vite, Tailwind CSS v4, React Router.
+*   **Backend:** Node.js, Express, CORS.
+*   **CI/CD:** GitHub Actions (GitHub Pages) y GitLab CI/CD (GitLab Pages).
+*   **Hosting Backend:** Render.
+*   **Control de Versiones:** Git.
 
-## Expanding the Oxlint configuration
+Despliegue en Vivo
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+*   **GitHub Pages:** [https://Jose5273.github.io/Arquitectura-CI-CD/](https://Jose5273.github.io/Arquitectura-CI-CD/)
+*   **GitLab Pages:** [https://arquitectura-ci-cd-133ce9.gitlab.io/Arquitectura-CI-CD/](https://arquitectura-ci-cd-133ce9.gitlab.io/Arquitectura-CI-CD/)
+*   **Backend (API):** [https://arquitectura-ci-cd.onrender.com](https://arquitectura-ci-cd.onrender.com)
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+*(Nota: El backend en Render usa el plan gratuito, por lo que puede tardar hasta 60 segundos en "despertar" tras un periodo de inactividad).*
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Instalación y Uso Local
+
+Sigue estos pasos para ejecutar el proyecto en tu computadora.
+
+Requisitos Previos
+*   Node.js (v20 o superior)
+*   Git
+
+Clonar el repositorio
+```bash
+git clone https://github.com/Jose5273/Arquitectura-CI-CD.git
+cd Arquitectura-CI-CD
